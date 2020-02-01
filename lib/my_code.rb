@@ -32,7 +32,6 @@ def reduce_to_total(source, start = 0)
   source.each do |num|
     total += num
   end
-  end
   total
 end
 

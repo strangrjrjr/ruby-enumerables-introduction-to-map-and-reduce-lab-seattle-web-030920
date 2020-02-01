@@ -28,16 +28,10 @@ def map_to_square(source)
 end
 
 def reduce_to_total(source, start = 0)
-  total = 0
-  if start == 0
-    source.each do |num|
-      total += num
-    end
-  else
-    total = start
-    source.each do |num|
-      total += num
-    end
+  total = start
+  source.each do |num|
+    total += num
+  end
   end
   total
 end

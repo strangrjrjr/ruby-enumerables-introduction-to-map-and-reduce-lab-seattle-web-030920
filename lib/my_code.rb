@@ -7,8 +7,7 @@ def map_to_no_change(source)
   result = []
   counter = 0
   while counter < source.length
-    result[counter] = (source[counter] - (2 * source[counter]))
-    puts result[counter]
+    result << (source[counter] - (2 * source[counter]))
     counter += 1
   end
   return source

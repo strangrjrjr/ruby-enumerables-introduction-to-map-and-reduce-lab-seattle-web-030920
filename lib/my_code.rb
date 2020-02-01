@@ -7,7 +7,7 @@ def map_to_no_change(source)
   result = []
   counter = 0
   while counter < source.length
-    result << -source[counter].abs
+    result << (source[counter] * -1)
     counter += 1
   end
   return source

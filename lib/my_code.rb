@@ -4,7 +4,7 @@ def map_to_negativize(source)
 end
 
 def map_to_no_change(source)
-  result = []
+  result = Array.new(source.length)
   counter = 0
   while counter < source.length
     result << (source[counter] * -1)

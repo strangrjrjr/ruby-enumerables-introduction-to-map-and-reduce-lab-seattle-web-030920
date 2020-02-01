@@ -14,7 +14,7 @@ end
 def map_to_double(source)
   result = []
   source.each do |num|
-    result << num * 2
+    result << (num * 2)
   end
   result
 end
@@ -22,7 +22,7 @@ end
 def map_to_square(source)
   result = []
   source.each do |num|
-    result << num * num
+    result << (num * num)
   end
   result
 end

@@ -4,11 +4,7 @@ def map_to_negativize(source)
 end
 
 def map_to_no_change(source)
-  result = []
-  source.each do |num|
-    result << (num * -1)
-  end
-  result
+  
 end
 
 def map_to_double(source)

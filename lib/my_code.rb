@@ -27,7 +27,7 @@ def map_to_square(source)
   result
 end
 
-def reduce_to_total(source, start)
+def reduce_to_total(source, start = 0)
   total = 0
   if start == 0
     source.each do |num|

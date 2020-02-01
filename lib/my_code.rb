@@ -44,7 +44,13 @@ def reduce_to_total(source, start = 0)
 end
 
 def reduce_to_all_true(source)
-  
+  result = true
+  source.each do |value|
+    if !value
+      result = false
+    end
+  end
+  result
 end
 
 def reduce_to_any_true(source)

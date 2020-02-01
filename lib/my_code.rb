@@ -1,10 +1,14 @@
 # My Code here....
 def map_to_negativize(source)
-  
+  result = []
+  source.each do |num|
+    result << (num * -1)
+  end
+  result
 end
 
 def map_to_no_change(source)
-  
+  source.each do |num
 end
 
 def map_to_double(source)

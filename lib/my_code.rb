@@ -6,7 +6,7 @@ end
 def map_to_no_change(source)
   result = []
   source.each do |num|
-    result << num * -1
+    result << (num * -1)
   end
   result
 end

@@ -34,10 +34,9 @@ def reduce_to_total(source, start = 0)
       total += num
     end
   else
-    counter = start
-    while counter < source.length
-      total += source[counter]
-      counter += 1
+    total = start
+    source.each do |num|
+      total += num
     end
   end
   total

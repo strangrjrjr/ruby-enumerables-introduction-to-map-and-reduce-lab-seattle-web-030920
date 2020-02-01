@@ -54,5 +54,11 @@ def reduce_to_all_true(source)
 end
 
 def reduce_to_any_true(source)
-  
+  result = false
+  source.each do |value|
+    if value
+      result = true
+    end
+  end
+  result
 end

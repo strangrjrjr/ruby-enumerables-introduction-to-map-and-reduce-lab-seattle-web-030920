@@ -12,11 +12,19 @@ def map_to_no_change(source)
 end
 
 def map_to_double(source)
-  
+  result = []
+  source.each do |num|
+    result << num * 2
+  end
+  result
 end
 
 def map_to_square(source)
-  
+  result = []
+  source.each do |num|
+    result << num * num
+  end
+  result
 end
 
 def reduce_to_total(source, start)

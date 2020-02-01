@@ -4,14 +4,11 @@ def map_to_negativize(source)
 end
 
 def map_to_no_change(source)
-  result = Array.new(source.length)
-  counter = 0
-  while counter < source.length
-  puts source[counter]
-    result[counter] << (source[counter] * -1)
-    counter += 1
+  result = []
+  source.each do |num|
+    result << num * -1
   end
-  return source
+  result
 end
 
 def map_to_double(source)

@@ -8,7 +8,10 @@ def map_to_negativize(source)
 end
 
 def map_to_no_change(source)
-  source.each do |num
+  source.each do |num|
+    result << num
+  end
+  result
 end
 
 def map_to_double(source)
